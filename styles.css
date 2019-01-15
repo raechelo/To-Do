@@ -31,6 +31,14 @@ td {
   padding: 15px;
 }
 
+td:hover {
+  padding-left: 0px;
+}
+
+tr:nth-child(2):hover input {
+  margin-left: 15px;
+}
+
 .strike-out {
   text-decoration: line-through;
 }
@@ -51,9 +59,6 @@ td:hover .list-delete {
   margin-right: 5px;
 }
 
-td:hover {
-  padding-left: 0px;
-}
 
 .list-item:first-of-type {
   margin-left:15px;
