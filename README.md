@@ -8,3 +8,6 @@ jQuery is super handy! It seems to allow for so much styling and event handling.
 
 # What's to Come
 I wish I had been able to get the functionality to work on the dynamically created elements, like the new list items. I have a few resoucres to reference to see if I can work this kink out.
+
+# GH Pages
+https://raechelo.github.io/To-Do/
