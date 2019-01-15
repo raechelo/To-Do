@@ -27,11 +27,42 @@ th {
   padding: 15px;
 }
 
-td{
+td {
+  padding: 15px;
+  /* padding-left: 0px; */
+}
+
+.strike-out {
+  text-decoration: line-through;
+}
+
+.list-delete {
+  background-color: indianred;
+  color: white;
+  display: none;
+  /* margin-left: 0px; */
   padding: 15px;
 }
 
-.fa-dumpster-fire {
-  display: none;
+td:hover .list-delete {
+  position: relative;
+  animation-duration: 1s;
+  animation-name: fadein;
+  display: inline;
+  top: 0;
   margin-right: 5px;
+}
+
+td:hover {
+  padding-left: 0px;
+}
+
+ @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
