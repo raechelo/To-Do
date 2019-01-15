@@ -14,7 +14,7 @@ table {
   width: 400px;
 }
 
-.todo tr:nth-child(even) {
+.todo tr:nth-child(odd) {
   background-color: mintcream;
 }
 
@@ -27,11 +27,56 @@ th {
   padding: 15px;
 }
 
-td{
+td {
   padding: 15px;
 }
 
-.fa-dumpster-fire {
+td:hover {
+  padding-left: 0px;
+}
+
+tr:nth-child(2):hover input {
+  margin-left: 15px;
+}
+
+.strike-out {
+  text-decoration: line-through;
+}
+
+.list-delete {
+  background-color: indianred;
+  color: white;
   display: none;
+  padding: 15px;
+}
+
+td:hover .list-delete {
+  position: relative;
+  animation-duration: 1s;
+  animation-name: fadein;
+  display: inline;
+  top: 0;
   margin-right: 5px;
+}
+
+
+.list-item:first-of-type {
+  margin-left:15px;
+  /* background-color: pink; */
+}
+
+input {
+  font-size: 20px;
+  height: 25px;
+  border: 1px solid transparent;
+}
+
+ @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
 }
