@@ -14,7 +14,7 @@ table {
   width: 400px;
 }
 
-.todo tr:nth-child(even) {
+.todo tr:nth-child(odd) {
   background-color: mintcream;
 }
 
@@ -29,7 +29,6 @@ th {
 
 td {
   padding: 15px;
-  /* padding-left: 0px; */
 }
 
 .strike-out {
@@ -40,7 +39,6 @@ td {
   background-color: indianred;
   color: white;
   display: none;
-  /* margin-left: 0px; */
   padding: 15px;
 }
 
@@ -55,6 +53,17 @@ td:hover .list-delete {
 
 td:hover {
   padding-left: 0px;
+}
+
+.list-item:first-of-type {
+  margin-left:15px;
+  /* background-color: pink; */
+}
+
+input {
+  font-size: 20px;
+  height: 25px;
+  border: 1px solid transparent;
 }
 
  @keyframes fadein {

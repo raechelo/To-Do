@@ -1,10 +1,17 @@
 // JQUERY EVENTS
 
-$(".list-item").click(strikeOut);
+$("td").click(strikeOut);
 $(".fa-dumpster-fire").click(deleteOption)
+$(".btn").on("click", addToDo)
 
 
 // FUNCTIONS
+  function addToDo() {
+    var newTask = $("input").val();
+    var markup = "<tr><td><span class='list-delete'><i class='fas fa-dumpster-fire'></i></span>" + newTask + "</td></tr>"
+    $(".todo tr:last").after(markup);
+  }
+  
 function strikeOut() {
   $(this).toggleClass("strike-out");
 }
